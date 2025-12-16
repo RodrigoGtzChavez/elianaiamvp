@@ -161,9 +161,9 @@ Esto creará las tablas: profiles, master_plans, daily_logs, y notifications.
 npm run dev
 ```
 El servidor estará disponible en:
-
+```
 http://localhost:3000
-
+```
 
 
 
