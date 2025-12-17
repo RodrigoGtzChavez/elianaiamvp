@@ -41,7 +41,20 @@ El sistema está desarrollado con **Node.js** y **Express.js**, utiliza **Postgr
 ---
 
 ## 📁 Estructura del Proyecto
-eliana-ai-api/ ├── index.js # Archivo principal de la aplicación ├── package.json # Metadatos y dependencias ├── .env # Variables de entorno ├── models/ # Definición de modelos Sequelize │ ├── index.js │ ├── profile.js │ ├── master_plan.js │ ├── daily_log.js │ └── notification.js ├── migrations/ # Archivos de migración de la DB └── config/ └── config.js # Configuración de Sequelize
+eliana-ai-api/
+├── index.js
+├── package.json
+├── .env
+├── models/
+│   ├── index.js
+│   ├── profile.js
+│   ├── master_plan.js
+│   ├── daily_log.js
+│   └── notification.js
+├── migrations/
+└── config/
+    └── config.js
+
 
 ---
 
