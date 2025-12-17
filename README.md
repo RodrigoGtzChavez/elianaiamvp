@@ -206,7 +206,92 @@ Programador de Notificaciones (cron job) para envíos automáticos.
 
 Análisis de Patrones de comportamiento a partir de Daily Logs.
 
+----
+---
 👨‍💻 Autor
 Proyecto académico – Desarrollo Backend
 
 Eliana AI – Business Assistant Companion
+---
+---
+
+⚙️ Archivo .sequelizerc
+require('dotenv').config({ silent: true });
+
+
+Esto permite que Sequelize lea el archivo .env.
+
+🧱 Generación de modelos y migraciones
+Profiles
+npx sequelize-cli model:generate \
+--name Profile \
+--attributes age:integer,location:string,personality:jsonb,dreams:text,strengths:jsonb,weaknesses:jsonb,financial_goal:jsonb,monthly_income:decimal,current_situation:text
+
+MasterPlan
+npx sequelize-cli model:generate \
+--name MasterPlan \
+--attributes userId:uuid,generatedText:text,tasks:jsonb
+
+DailyLog
+npx sequelize-cli model:generate \
+--name DailyLog \
+--attributes userId:uuid,date:date,mood:string,actionsCompleted:jsonb
+
+Notification
+npx sequelize-cli model:generate \
+--name Notification \
+--attributes userId:uuid,type:string,scheduledFor:date,sent:boolean
+
+▶️ Ejecutar migraciones
+npx sequelize-cli db:migrate
+
+
+✔️ Las tablas se crean en Supabase
+✔️ Se registra SequelizeMeta
+
+🔌 Conexión desde Express
+
+En index.js (parte superior):
+
+require('dotenv').config({ silent: true });
+const db = require('./models');
+
+
+Ejemplo de uso:
+
+app.get('/api/profiles', async (req, res) => {
+  const profiles = await db.Profile.findAll();
+  res.json(profiles);
+});
+
+
+Equivalente en SQL:
+
+SELECT * FROM profiles;
+
+✅ Verificación
+
+Entrar a:
+
+http://localhost:3000/api/profiles
+
+
+Resultado esperado:
+
+[]
+
+🧠 Conclusión académica
+
+El proyecto Eliana AI implementa correctamente:
+
+Bases de datos relacionales
+
+ORM (Sequelize)
+
+Migraciones versionadas
+
+Integración backend–database
+
+Buenas prácticas de persistencia
+
+Todo esto siguiendo los principios del desarrollo backend moderno.
