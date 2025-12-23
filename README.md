@@ -10,7 +10,7 @@
 
 
 ## Estructura del Frontend
----
+```
 eliana-ai/
 ├── public/
 │   └── index.html           # Punto de entrada HTML (modificado para Vite)
@@ -35,7 +35,7 @@ eliana-ai/
 ├── package.json             # Dependencias
 ├── tailwind.config.js       # Configuración de Tailwind
 └── tsconfig.json            # Configuración de TypeScript
----
+```
 ## 📌 Descripción del Proyecto
 
 Este proyecto implementa el **backend API** para **Eliana AI**, una aplicación tipo Business Assistant diseñada para la gestión de perfiles de usuario, planes estratégicos, seguimiento diario y notificaciones.
@@ -68,7 +68,7 @@ El sistema está desarrollado con **Node.js** y **Express.js**, utiliza **Postgr
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura del Backend
 eliana-ai-api/
 ├── index.js
 ├── package.json
