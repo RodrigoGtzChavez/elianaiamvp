@@ -8,6 +8,33 @@
 
 ---
 
+
+## Estructura del Frontend
+eliana-ai/
+├── public/
+│   └── index.html           # Punto de entrada HTML (modificado para Vite)
+├── src/
+│   ├── components/          # Componentes visuales
+│   │   ├── ui/
+│   │   │   └── Button.tsx   # Botones reutilizables
+│   │   ├── ChatInterface.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── Landing.tsx
+│   │   ├── MasterPlanView.tsx
+│   │   └── Onboarding.tsx
+│   ├── context/             # Estado global (Context API)
+│   │   └── AppContext.tsx
+│   ├── services/            # Lógica de negocio y APIs
+│   │   └── geminiService.ts
+│   ├── App.tsx              # Componente raíz y enrutamiento lógico
+│   ├── index.tsx            # Punto de entrada (a veces main.tsx en Vite)
+│   ├── index.css            # Estilos globales / Tailwind directives
+│   └── types.ts             # Definiciones de TypeScript
+├── .env                     # Variables de entorno (API KEY)
+├── package.json             # Dependencias
+├── tailwind.config.js       # Configuración de Tailwind
+└── tsconfig.json            # Configuración de TypeScript
+
 ## 📌 Descripción del Proyecto
 
 Este proyecto implementa el **backend API** para **Eliana AI**, una aplicación tipo Business Assistant diseñada para la gestión de perfiles de usuario, planes estratégicos, seguimiento diario y notificaciones.
