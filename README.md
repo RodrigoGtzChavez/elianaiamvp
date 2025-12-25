@@ -7,7 +7,7 @@
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
 
 ---
-![Example Image of Eliana's Frontend WebPage](elianasFrontend.png)
+![Example Image of Eliana's Frontend WebPage](/elianasFrontend.png)
 
 ## Estructura del Frontend
 ```
