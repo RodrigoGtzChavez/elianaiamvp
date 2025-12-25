@@ -9,6 +9,67 @@
 ---
 ![Example Image of Eliana's Frontend WebPage](/elianasFrontend.png)
 
+# Eliana AI - Business Assistant & Emotional Companion 🌿
+
+**Eliana AI** es una plataforma diseñada para cerrar la brecha entre la gestión financiera estratégica y el bienestar emocional. No es solo un dashboard de números; es una compañera que entiende tu contexto, tus miedos y tus ambiciones para guiarte hacia la libertad financiera.
+
+## 🚀 Upgrades Recientes (v1.1)
+
+Hemos implementado mejoras críticas para asegurar que la aplicación sea robusta y escalable:
+
+### 1. Sincronización de Modelo "Shadow Name"
+Debido a que el modelo actual de la base de datos (`Profile.js`) no cuenta con un campo `name` explícito, hemos implementado una **Estrategia de Persistencia en Personality**:
+- El nombre del usuario se encapsula automáticamente dentro del campo `JSONB personality` antes de enviarse al backend.
+- Esto permite mantener la personalización en la interfaz ("Hola, [Nombre]") sin necesidad de alterar migraciones de base de datos existentes de forma inmediata.
+
+### 2. Autogestión de Identificadores (UUID)
+Se ha optimizado el servicio `saveProfile` para cumplir con las mejores prácticas de PostgreSQL:
+- **Creación**: El frontend omite el envío del campo `id` si está vacío. Esto dispara el `DEFAULT gen_random_uuid()` en Supabase.
+- **Actualización**: Si el perfil ya existe (tiene un UUID), se envía para realizar un `UPSERT` correcto.
+
+### 3. Motor de Inteligencia (Gemini 3 Flash)
+Integración nativa con el SDK `@google/genai` utilizando el modelo `gemini-3-flash-preview`:
+- **Plan Maestro**: Generación de diagnósticos, hojas de ruta de 90 días y micro-hábitos personalizados basados en datos reales de ingresos y situación actual.
+- **Chat Empático**: Sistema de instrucciones (System Instructions) que define la personalidad de Eliana como una mentora profesional pero cercana.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19 + Tailwind CSS (Diseño Minimalista "Stone & Rose").
+- **IA**: Google Gemini API (Modelos Flash para baja latencia).
+- **Backend**: Node.js + Sequelize ORM.
+- **Base de Datos**: PostgreSQL alojado en Supabase.
+
+## 📋 Requisitos de Configuración del Backend
+
+Para que el frontend se comunique correctamente con tu API, asegúrate de que tu tabla `Profiles` en Supabase/Postgres tenga esta configuración:
+
+| Columna | Tipo | Configuración Especial |
+| :--- | :--- | :--- |
+| `id` | `uuid` | **Primary Key**, Default: `gen_random_uuid()` |
+| `personality` | `jsonb` | Para guardar el nombre y metadatos de IA |
+| `financial_goal`| `jsonb` | Para guardar metas complejas |
+| `monthly_income`| `decimal`| Para cálculos matemáticos precisos |
+
+### Configuración de Sequelize (`Profile.js`)
+Asegúrate de que tu `Profile.init` coincida con los tipos enviados:
+```javascript
+// Ejemplo de configuración compatible
+financial_goal: DataTypes.JSONB,
+personality: DataTypes.JSONB,
+strengths: DataTypes.JSONB, // Acepta arrays del frontend
+weaknesses: DataTypes.JSONB
+```
+
+## 🧠 Flujo de Usuario
+
+1. **Onboarding**: Captura de datos financieros y psicográficos.
+2. **Persistencia**: Envío al backend y recepción del UUID oficial.
+3. **Generación**: El backend procesa los datos con IA para crear el `MasterPlan`.
+4. **Acompañamiento**: Acceso al Dashboard y Chat en vivo para seguimiento de metas.
+
+---
+*Desarrollado con enfoque en Business & Emotion. Eliana AI Project 2024.*
+
 ## Estructura del Frontend
 ```
 eliana-ai/
