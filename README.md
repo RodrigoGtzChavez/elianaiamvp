@@ -18,6 +18,7 @@
 
 ---
 ![Blueprint Image of Eliana's MVP Main Core](/Blueprint.png)
+https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
 ---
 
 
