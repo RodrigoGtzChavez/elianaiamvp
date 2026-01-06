@@ -10,6 +10,26 @@
 ![Blueprint Image of Eliana's MVP Main Core](/Blueprint.png)
 ---
 
+
+3️⃣ Arquitectura mental correcta de Eliana AI (simplificada)
+🧠 Esquema conceptual (como historia de usuario)
+
+
+```
+[ Usuario ]
+     ↓ login/signup (OAuth)
+[ Supabase Auth ]
+     ↓ emite JWT
+[ Frontend ]
+     ↓ envía JWT
+[ Eliana API (Express) ]
+     ↓ valida JWT
+[ PostgreSQL ]
+```
+
+
+
+
 🧠 Arquitectura por dominios
 
 ```
