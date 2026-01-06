@@ -1,4 +1,4 @@
-# 📘 Eliana AI - Business Assistant Companion (Full-Stack Project)
+# 📘 Eliana AI - Sistema socio-técnico de acompañamiento financiero, emocional y estratégico asistido por IA (This is my Full Software Engineering Project)
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -7,9 +7,45 @@
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
 
 ---
-![Example Image of Eliana's Frontend WebPage](/elianasFrontend.png)
+![Blueprint Image of Eliana's MVP Main Core](/Blueprint.png)
 ---
 
+🧠 Arquitectura por dominios
+
+```
+┌───────────────────────────┐
+│        Frontend           │  React / TS
+│  (experiencia espiritual) │
+└────────────┬──────────────┘
+             │
+┌────────────▼──────────────┐
+│      API Core (JS)        │  Node + Express + TS
+│  - auth                   │
+│  - perfiles               │
+│  - planes                 │
+│  - ideas de negocio       │
+│  - orquestación IA        │
+└───────┬─────────┬─────────┘
+        │         │
+┌───────▼───┐ ┌───▼────────────────┐
+│ IA Service│ │ Data Science Engine │
+│ Gemini/GPT│ │ Python              │
+└───────────┘ │ pandas / numpy      │
+               │ sklearn / stats     │
+               └────────────────────┘
+```
+
+👉 Node = sistema nervioso
+👉 Python = cerebro analítico
+
+---
+
+
+
+
+---
+### Aqui empieza 
+### todo el Backend
 ```
                  ┌────────────────────┐
                  │  Usuario (Humano)  │
