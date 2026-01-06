@@ -97,24 +97,48 @@
 
 **Eliana AI** es una plataforma diseñada para cerrar la brecha entre la gestión financiera estratégica y el bienestar emocional. No es solo un dashboard de números; es una compañera que entiende tu contexto, tus miedos y tus ambiciones para guiarte hacia la libertad financiera.
 
-## 🚀 Upgrades Recientes (v1.1)
+## 🚀  (v1.1)
 
-Hemos implementado mejoras críticas para asegurar que la aplicación sea robusta y escalable:
+Roadmap técnico realista
+v1 (ahora)
 
-### 1. Sincronización de Modelo "Shadow Name"
-Debido a que el modelo actual de la base de datos (`Profile.js`) no cuenta con un campo `name` explícito, hemos implementado una **Estrategia de Persistencia en Personality**:
-- El nombre del usuario se encapsula automáticamente dentro del campo `JSONB personality` antes de enviarse al backend.
-- Esto permite mantener la personalización en la interfaz ("Hola, [Nombre]") sin necesidad de alterar migraciones de base de datos existentes de forma inmediata.
+*Supabase Auth
 
-### 2. Autogestión de Identificadores (UUID)
-Se ha optimizado el servicio `saveProfile` para cumplir con las mejores prácticas de PostgreSQL:
-- **Creación**: El frontend omite el envío del campo `id` si está vacío. Esto dispara el `DEFAULT gen_random_uuid()` en Supabase.
-- **Actualización**: Si el perfil ya existe (tiene un UUID), se envía para realizar un `UPSERT` correcto.
+*Profile
 
-### 3. Motor de Inteligencia (Gemini 3 Flash)
-Integración nativa con el SDK `@google/genai` utilizando el modelo `gemini-3-flash-preview`:
-- **Plan Maestro**: Generación de diagnósticos, hojas de ruta de 90 días y micro-hábitos personalizados basados en datos reales de ingresos y situación actual.
-- **Chat Empático**: Sistema de instrucciones (System Instructions) que define la personalidad de Eliana como una mentora profesional pero cercana.
+*MasterPlan (Gemini)
+
+*Editable por usuario
+
+v2
+
+*Daily Logs
+
+*Feedback loop
+
+*Métricas simples
+
+v3
+
+*Python microservicio (Data Analysis)
+
+*Reportes
+
+*Modelos matemáticos propios
+
+👉 JS ↔ Python:
+
+*REST API
+
+*Workers
+
+*Colas (más adelante)
+
+
+
+
+
+
 
 ## 🛠️ Tech Stack
 
@@ -123,6 +147,14 @@ Integración nativa con el SDK `@google/genai` utilizando el modelo `gemini-3-fl
 - **Backend**: Node.js + Sequelize ORM.
 - **Base de Datos**: PostgreSQL alojado en Supabase.
 
+
+
+
+
+
+---
+---
+---
 ## 📋 Requisitos de Configuración del Backend
 
 ---
