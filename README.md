@@ -69,24 +69,7 @@ Integración nativa con el SDK `@google/genai` utilizando el modelo `gemini-3-fl
 
 ## 📋 Requisitos de Configuración del Backend
 
-Para que el frontend se comunique correctamente con tu API, asegúrate de que tu tabla `Profiles` en Supabase/Postgres tenga esta configuración:
-
-| Columna | Tipo | Configuración Especial |
-| :--- | :--- | :--- |
-| `id` | `uuid` | **Primary Key**, Default: `gen_random_uuid()` |
-| `personality` | `jsonb` | Para guardar el nombre y metadatos de IA |
-| `financial_goal`| `jsonb` | Para guardar metas complejas |
-| `monthly_income`| `decimal`| Para cálculos matemáticos precisos |
-
-### Configuración de Sequelize (`Profile.js`)
-Asegúrate de que tu `Profile.init` coincida con los tipos enviados:
-```javascript
-// Ejemplo de configuración compatible
-financial_goal: DataTypes.JSONB,
-personality: DataTypes.JSONB,
-strengths: DataTypes.JSONB, // Acepta arrays del frontend
-weaknesses: DataTypes.JSONB
-```
+---
 
 ## 🧠 Flujo de Usuario
 
@@ -96,7 +79,7 @@ weaknesses: DataTypes.JSONB
 4. **Acompañamiento**: Acceso al Dashboard y Chat en vivo para seguimiento de metas.
 
 ---
-*Desarrollado con enfoque en Business & Emotion. Eliana AI Project 2024.*
+*Desarrollado con enfoque en Business & Emotion. Eliana AI Project 2026.*
 
 ## Estructura del Frontend
 ```
@@ -127,10 +110,10 @@ eliana-ai/
 ```
 
 
+## 📁 Estructura del Backend
 
 
 ```
-## 📁 Estructura del Backend
 eliana-ai-api/
 ├── index.js
 ├── package.json
@@ -147,7 +130,7 @@ eliana-ai-api/
 ```
 
 
-
+---
 
 ## 📌 Descripción del backend
 
@@ -155,7 +138,7 @@ Este proyecto implementa el **backend API** para **Eliana AI**, una aplicación 
 
 El sistema está desarrollado con **Node.js** y **Express.js**, utiliza **PostgreSQL** (alojado en **Supabase**) como base de datos, y **Sequelize ORM** para la gestión de datos relacionales, siguiendo el paradigma **RESTful** y aplicando operaciones **CRUD** completas.
 
-> 💡 **Arquitectura:** El diseño está optimizado para la futura integración de un motor de **Inteligencia Artificial** que generará planes personalizados basados en el contexto y perfil del usuario.
+> 💡 **Arquitectura:** El diseño está optimizado para la integración de un motor de **Inteligencia Artificial** que generará planes personalizados basados en el contexto y perfil del usuario.
 
 ## 🎯 Objetivos
 
@@ -164,7 +147,7 @@ El sistema está desarrollado con **Node.js** y **Express.js**, utiliza **Postgr
 * Conectar el backend a una base de datos PostgreSQL en Supabase.
 * Utilizar **Supabase Auth** para una autenticación segura.
 * Establecer relaciones entre entidades (Integridad Referencial).
-* Preparar una base de código limpia y escalable para **integrar con IA via Gemini Free API Key**.
+* Preparar una base de código limpia y escalable para **integrar con IA via Gemini Free API Key en estado de desarrollo y planes premium ya en fase de producciòn**.
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -187,6 +170,7 @@ El sistema está desarrollado con **Node.js** y **Express.js**, utiliza **Postgr
 ---
 
 ## 🗂️ Modelo de Datos
+## DB's
 
 ### 🔑 Autenticación (`auth.users`)
 
@@ -309,9 +293,17 @@ http://localhost:3000
 
 
 
-🌐 Endpoints DisponiblesProfiles (/api/profiles)MétodoRutaDescripciónPOST/Crear el perfil inicial del usuario.GET/Obtener todos los perfiles (uso administrativo/prueba).GET/:idObtener un perfil específico.PATCH/:idActualizar la información del perfil.DELETE/:idEliminar un perfil.
+🌐 Endpoints Disponibles
 
-Master Plans (/api/master-plans)MétodoRutaDescripciónPOST/Crear un nuevo plan maestro.GET/user/:userIdObtener todos los planes de un usuario.PATCH/:idActualizar un plan existente.Daily Logs (/api/daily-logs)MétodoRutaDescripciónPOST/Crear un nuevo registro diario.GET/user/:userIdObtener todos los registros diarios de un usuario.PATCH/:idActualizar un registro.DELETE/:idEliminar un registro.Notifications (/api/notifications)MétodoRutaDescripciónPOST/Crear una nueva notificación/recordatorio.GET/user/:userIdObtener notificaciones pendientes de un usuario.
+Profiles 
+
+(/api/profiles)
+
+MétodoRutaDescripciónPOST/Crear el perfil inicial del usuario.GET/Obtener todos los perfiles (uso administrativo/prueba).GET/:idObtener un perfil específico.PATCH/:idActualizar la información del perfil.DELETE/:idEliminar un perfil.
+
+Master Plans (/api/master-plans)MétodoRutaDescripciónPOST/
+
+Crear un nuevo plan maestro.GET/user/:userIdObtener todos los planes de un usuario.PATCH/:idActualizar un plan existente.Daily Logs (/api/daily-logs)MétodoRutaDescripciónPOST/Crear un nuevo registro diario.GET/user/:userIdObtener todos los registros diarios de un usuario.PATCH/:idActualizar un registro.DELETE/:idEliminar un registro.Notifications (/api/notifications)MétodoRutaDescripciónPOST/Crear una nueva notificación/recordatorio.GET/user/:userIdObtener notificaciones pendientes de un usuario.
 
 🧠 Arquitectura y Escalabilidad
 El diseño de este proyecto se centra en:
