@@ -1,4 +1,6 @@
-# 📘 Eliana AI - Sistema socio-técnico de acompañamiento financiero, emocional y estratégico asistido por IA (This is my Full Software Engineering Project)
+# 📘 Eliana AI app - Sistema socio-técnico de acompañamiento financiero, emocional y estratégico asistido por IA 
+
+(Full Software Engineering Project)
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
@@ -19,7 +21,7 @@
 ---
 
 
-3️⃣ Pseudo Algoritmo de Eliana AI app (Ingenieria del Software simplificada)
+3️⃣ Pseudo Algoritmo de Eliana AI app (Ingenieria simplificada)
 
 🧠 Esquema conceptual (como historia de usuario)
 
