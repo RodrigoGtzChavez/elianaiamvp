@@ -1,5 +1,10 @@
 # 📘 Eliana AI - Sistema socio-técnico de acompañamiento financiero, emocional y estratégico asistido por IA (This is my Full Software Engineering Project)
-
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+</p>
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -11,7 +16,8 @@
 ---
 
 
-3️⃣ Arquitectura mental de Eliana AI (Ingenieria del Software simplificada)
+3️⃣ Pseudo Algoritmo de Eliana AI app (Ingenieria del Software simplificada)
+
 🧠 Esquema conceptual (como historia de usuario)
 
 
@@ -64,7 +70,7 @@
 
 
 ---
-### Aqui empieza 
+### Estructura Explicada de  
 ### todo el Backend
 ```
                  ┌────────────────────┐
@@ -96,6 +102,10 @@
 # Eliana AI - Business Assistant & Emotional Companion 🌿
 
 **Eliana AI** es una plataforma diseñada para cerrar la brecha entre la gestión financiera estratégica y el bienestar emocional. No es solo un dashboard de números; es una compañera que entiende tu contexto, tus miedos y tus ambiciones para guiarte hacia la libertad financiera.
+---
+Preview del frontend 
+![Image of Eliana's MVP Frontend's Main Core](Wireframe.png)
+
 
 
 ### Arquitectura del Backend de Eliana AI (El MVP - Minimum Viable Product)
