@@ -11,7 +11,7 @@
 ---
 
 
-3️⃣ Arquitectura mental correcta de Eliana AI (simplificada)
+3️⃣ Arquitectura mental de Eliana AI (Ingenieria del Software simplificada)
 🧠 Esquema conceptual (como historia de usuario)
 
 
@@ -30,7 +30,7 @@
 
 
 
-🧠 Arquitectura por dominios
+🧠 Esquema General de Eliana por dominios
 
 ```
 ┌───────────────────────────┐
@@ -96,6 +96,37 @@
 # Eliana AI - Business Assistant & Emotional Companion 🌿
 
 **Eliana AI** es una plataforma diseñada para cerrar la brecha entre la gestión financiera estratégica y el bienestar emocional. No es solo un dashboard de números; es una compañera que entiende tu contexto, tus miedos y tus ambiciones para guiarte hacia la libertad financiera.
+
+
+### Arquitectura del Backend de Eliana AI (El MVP - Minimum Viable Product)
+1️⃣ Vista global (qué existe y dónde vive)
+
+```
+┌────────────┐
+│  Frontend  │  React + TS + Tailwind
+│   (SPA)    │
+└─────┬──────┘
+      │ HTTP (JSON)
+      ▼
+┌────────────┐
+│   Backend  │  Node.js + Express
+│   (API)    │
+└─────┬──────┘
+      │ ORM (Sequelize)
+      ▼
+┌────────────┐
+│  Supabase  │  PostgreSQL
+│ (Database) │
+└─────┬──────┘
+      │ SDK
+      ▼
+┌────────────┐
+│   Gemini   │  Google AI
+│    (AI)    │
+└────────────┘
+
+```
+
 
 ## 🚀  (v1.1)
 
