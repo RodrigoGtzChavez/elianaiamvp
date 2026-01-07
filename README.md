@@ -219,8 +219,14 @@ v3
 ![Visuals of Eliana's MVP 1'st onboarding screen ](/Onboarding1.png)
 
 2. **Persistencia**: Envío al backend y recepción del UUID oficial.
+![Visuals of Eliana's MVP 2'nd onboarding screen ](/Onboarding2.png)
+
 3. **Generación**: El backend procesa los datos con IA para crear el `MasterPlan`.
-4. **Acompañamiento**: Acceso al Dashboard y Chat en vivo para seguimiento de metas.
+4. ![Visuals of Eliana's MVP 3'rd onboarding screen ](/Onboarding3.png)
+
+5. **Acompañamiento**: Acceso al Dashboard y Chat en vivo para seguimiento de metas.
+![Visuals of Eliana's MVP Initial onboarding screen ](/Onboarding0.png)
+
 
 ---
 *Desarrollado con enfoque en Business & Emotion. Eliana AI Project 2026.*
