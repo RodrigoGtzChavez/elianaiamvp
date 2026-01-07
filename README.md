@@ -66,6 +66,10 @@ https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
                │ sklearn / stats     │
                └────────────────────┘
 ```
+### Data Analysis 
+![Chart Image of Eliana's MVP Data Science recolection](/DataScience.png)
+https://claude.ai/public/artifacts/e65adbc7-fe2d-44d1-9068-e70ec53c13d4
+
 
 👉 Node = sistema nervioso
 👉 Python = cerebro analítico
