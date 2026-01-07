@@ -22,6 +22,10 @@ https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
 ---
 
 
+![Image of Eliana's MVP HUB Inspired by x](/ElianaInterfazWeb.png)
+
+
+
 3️⃣ Pseudo Algoritmo(Ingenieria simplificada)
 
 
@@ -41,6 +45,7 @@ https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
 ```
 
 
+![Visual of Eliana's strategy Estadistics in Piecharts](/ElianasDatascience.png)
 
 
 🧠 Esquema General de Eliana por dominios
