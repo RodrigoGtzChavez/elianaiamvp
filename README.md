@@ -22,9 +22,10 @@ https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
 ---
 
 
-3️⃣ Pseudo Algoritmo de Eliana AI app (Ingenieria simplificada)
+3️⃣ Pseudo Algoritmo(Ingenieria simplificada)
 
-🧠 Esquema conceptual (como historia de usuario)
+
+  🧠 Esquema conceptual (como historia de usuario)
 
 
 ```
@@ -81,7 +82,8 @@ https://claude.ai/public/artifacts/e65adbc7-fe2d-44d1-9068-e70ec53c13d4
 
 ---
 ### Estructura Explicada de  
-### todo el Backend
+### todo el Backend 
+(Levantamiento de requerimientos) 
 ```
                  ┌────────────────────┐
                  │  Usuario (Humano)  │
@@ -148,7 +150,8 @@ Preview del frontend
 
 ```
 
-
+```
+// Omitir todo esto
 ## 🚀  (v1.1)
 
 Roadmap técnico realista
@@ -185,14 +188,14 @@ v3
 *Workers
 
 *Colas (más adelante)
+```
 
 
 
 
 
 
-
-## 🛠️ Tech Stack
+## 🛠️ Tecnologias Utilizadas para el proyecto GLOBAL
 
 - **Frontend**: React 19 + Tailwind CSS (Diseño Minimalista "Stone & Rose").
 - **IA**: Google Gemini API (Modelos Flash para baja latencia).
@@ -203,17 +206,18 @@ v3
 
 
 
-
 ---
 ---
 ---
-## 📋 Requisitos de Configuración del Backend
+---
 
 ---
 
 ## 🧠 Flujo de Usuario
 
 1. **Onboarding**: Captura de datos financieros y psicográficos.
+![Visuals of Eliana's MVP 1'st onboarding screen ](/Onboarding1.png)
+
 2. **Persistencia**: Envío al backend y recepción del UUID oficial.
 3. **Generación**: El backend procesa los datos con IA para crear el `MasterPlan`.
 4. **Acompañamiento**: Acceso al Dashboard y Chat en vivo para seguimiento de metas.
@@ -377,6 +381,8 @@ Recordatorios programados para el usuario.
 ---
 
 ## ⚙️ Configuración y Ejecución (Paso a Paso)
+## 📋 Requisitos de Configuración del Backend
+
 
 ### 1️⃣ Clonar el Repositorio
 
