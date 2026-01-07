@@ -110,6 +110,7 @@ https://claude.ai/public/artifacts/e65adbc7-fe2d-44d1-9068-e70ec53c13d4
 ```
 
 # Eliana AI - Business Assistant & Emotional Companion 🌿
+![Visuals of Eliana's MVP Main Core](/EngineCore.png)
 
 **Eliana AI** es una plataforma diseñada para cerrar la brecha entre la gestión financiera estratégica y el bienestar emocional. No es solo un dashboard de números; es una compañera que entiende tu contexto, tus miedos y tus ambiciones para guiarte hacia la libertad financiera.
 ---
