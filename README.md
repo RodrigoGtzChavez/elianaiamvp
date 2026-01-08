@@ -45,12 +45,10 @@ https://notebooklm.google.com/notebook/d0efeba5-7ab6-4457-9396-325ff5615dc9
                │ sklearn / stats     │
                └────────────────────┘
 ```
----
----
----
+
 ![Esquema de la arquitectura del Software Eliana AI](/EsquemaElianaDominions.png)
 ![Image of Eliana's MVP HUB Inspired by x](/ElianaInterfazWeb.png)
-{Paper academico tipo tesis que encapsula todos los principios inspirados]
+Paper academico tipo tesis que encapsula todos los principios inspirados]
 https://drive.google.com/file/d/152tRC1BvHpdma-jO4OIfKrXl8QY_L6Jr/view?usp=drive_link
 
 3️⃣ Pseudo Algoritmo(Ingenieria simplificada)
