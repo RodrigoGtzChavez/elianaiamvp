@@ -1,4 +1,5 @@
 # 📘 Eliana AI app - Sistema socio-técnico de acompañamiento financiero, emocional y estratégico asistido por IA 
+![Blueprint Image of Eliana's  Main HUB](/ELIANAHUB.png)
 
 (Full Software Engineering Project)
 <p align="left">
