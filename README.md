@@ -226,7 +226,6 @@ v3
 ## 🧠 Flujo de Usuario
 
 1. **Onboarding**: Captura de datos financieros y psicográficos.
-![Visuals of Eliana's MVP 1'st onboarding screen ](/Onboarding1.png)
 
 2. **Persistencia**: Envío al backend y recepción del UUID oficial.
 ![Visuals of Eliana's MVP 2'nd onboarding screen ](/Onboarding2.png)
