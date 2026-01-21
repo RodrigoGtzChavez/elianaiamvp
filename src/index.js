@@ -79,7 +79,7 @@ app.get('/api/profiles/:id', async (req, res) => {
   res.json(profile);
 });
 
-// UPDATE profile
+// UPDATE profile - !aun no ha sido debuggeado!
 app.patch('/api/profiles/:id', async (req, res) => {
   const profile = await Profile.findByPk(req.params.id);
 
@@ -182,6 +182,20 @@ app.patch('/api/master-plans/:id', async (req, res) => {
   await plan.update(req.body);
   res.json(plan);
 });
+
+
+// UPDATE master plan
+app.patch('/api/master-plans/:id', async (req, res) => {
+  const plan = await MasterPlan.findByPk(req.params.id);
+
+  if (!plan) {
+    return res.status(404).json({ error: 'Plan no encontrado' });
+  }
+  await plan.update(req.body);
+  res.json(plan);
+});
+
+
 
 // =====================================================
 // GENERATE MASTERPLAN USING FREE GEMINI API KEY
